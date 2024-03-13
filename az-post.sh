@@ -1,5 +1,5 @@
 #Install PDSH
-sudo apt install -y pdsh
+sudo apt install -y pdsh git
 
 #Setup PDSH variables
 echo 'export PDSH_RCMD_TYPE=ssh' >> ~/.bashrc
@@ -10,3 +10,6 @@ source .bashrc
 #Setup SSH 
 echo "   StrictHostKeyChecking no" >> ~/.ssh/config
 
+# Install WEKA Tools
+mkdir ~/tools
+git clone https://github.com/weka/tools ~/tools
