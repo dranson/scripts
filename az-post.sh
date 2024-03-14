@@ -1,5 +1,5 @@
 #Install Packages
-sudo apt get update 
+sudo apt update 
 sudo apt install -y pdsh git
 
 #Login to WEKA Admin
