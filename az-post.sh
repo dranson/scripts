@@ -1,6 +1,6 @@
 #Install Packages
 sudo apt get update 
-sudo apt install -y pdsh git fio
+sudo apt install -y pdsh git
 
 #Setup PDSH variables
 echo 'export PDSH_RCMD_TYPE=ssh' >> ~/.bashrc
