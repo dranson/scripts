@@ -5,8 +5,10 @@ sudo apt update
 sudo apt install -y pdsh git
 
 #Login to WEKA Admin
+echo 'read here'
 read -s -p 'WEKA Admin Password: ' passvar
 weka user login admin $passvar
+echo 'read done'
 
 #Setup PDSH variables
 echo 'export PDSH_RCMD_TYPE=ssh' >> ~/.bashrc
