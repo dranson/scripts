@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Install Packages
 sudo apt update 
 sudo apt install -y pdsh git
