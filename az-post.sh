@@ -1,4 +1,5 @@
 #Install Packages
+sudo apt get update 
 sudo apt install -y pdsh git fio
 
 #Setup PDSH variables
