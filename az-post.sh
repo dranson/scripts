@@ -3,7 +3,7 @@ sudo apt get update
 sudo apt install -y pdsh git
 
 #Login to WEKA Admin
-read -sp 'WEKA Admin Password: ' passvar
+read -s -p 'WEKA Admin Password: ' passvar
 weka user login admin $passvar
 
 #Setup PDSH variables
