@@ -18,3 +18,4 @@ echo "   StrictHostKeyChecking no" >> /home/ec2-user/.ssh/config
 # Install WEKA Tools
 mkdir /home/ec2-user/tools
 git clone https://github.com/weka/tools /home/ec2-user/tools
+EOT
