@@ -2,7 +2,7 @@
 
 #Install Packages
 sudo amazon-linux-extras install epel -y
-sudo yum update
+sudo yum update -y
 sudo yum install git pdsh -y
 
 
