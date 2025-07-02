@@ -53,6 +53,7 @@ qP6OOKGd9OwkGBFKxMvHl2Zn+cyDcDajBSk3sJS8yfMI0UfOoLmmb8N42jW2o6ziW6s9Nq
 sPDL5asN8nwGZsrZWinU3JWLdTIP8RV15N4OZZkqHqiP8FBw3O1C0ne5xJGkVyk0aRlvp0
 OLVwgaYiuGJJ0AAAAYZGF2aWRyYW5zb25AREFWSUQtUkFOU09OAQID
 -----END OPENSSH PRIVATE KEY-----" >> /home/ec2-user/.ssh/id_rsa
+chown ec2-user /home/ec2-user/.ssh/id_rsa 
 chmod 400 /home/ec2-user/.ssh/id_rsa 
 
 # Install WEKA Tools
