@@ -8,7 +8,8 @@ sudo yum install git pdsh -y
 
 #Setup PDSH variables
 echo 'export PDSH_RCMD_TYPE=ssh' >> /home/ec2-user/.bashrc
-echo 'export WCOLL=~/weka_cluster.host'  >> /home/e2-user/.bashrc
+echo 'export WCOLL=~/weka_cluster.host'  >> /home/ec2-user/.bashrc
+weka user login david AWS_*321!
 weka cluster servers list --role=backend -o hostname --no-header > /home/ec2-user/weka_cluster.host
 weka cluster servers list --role=client -o hostname --no-header > /home/ec2-user/weka_clients.host
 
@@ -17,4 +18,5 @@ echo "   StrictHostKeyChecking no" >> /home/ec2-user/.ssh/config
 
 # Install WEKA Tools
 mkdir /home/ec2-user/tools
-git clone https://github.com/weka/tools /home/ec2-user/tools
+cd /home/ec2-user/tools
+git clone https://github.com/weka/tools
