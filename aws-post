@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /home/ec2-user
 #Install Packages
 sudo amazon-linux-extras install epel -y
 sudo yum update -y
@@ -18,5 +18,4 @@ echo "   StrictHostKeyChecking no" >> /home/ec2-user/.ssh/config
 
 # Install WEKA Tools
 mkdir /home/ec2-user/tools
-cd /home/ec2-user/tools
 git clone https://github.com/weka/tools
