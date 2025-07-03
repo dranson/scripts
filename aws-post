@@ -3,7 +3,7 @@ cd /home/ec2-user
 #Install Packages
 sudo amazon-linux-extras install epel -y
 sudo yum update -y
-sudo yum install git pdsh -y
+sudo yum install git pdsh tmux -y
 
 
 #Setup PDSH variables
