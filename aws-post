@@ -12,10 +12,11 @@ echo 'export WCOLL=~/weka_clients.host'  >> /home/ec2-user/.bashrc
 weka user login david AWs_*321!
 weka cluster servers list --role=backend -o hostname --no-header > /home/ec2-user/weka_cluster.host
 weka cluster servers list --role=client -o hostname --no-header > /home/ec2-user/weka_clients.host
+weka user delete david
 
 #Setup SSH 
-chown ec2-user /home/ec2-user/.ssh/id_rsa 
-chmod 400 /home/ec2-user/.ssh/id_rsa 
+echo " StrictHostKeyChecking no" >> /home/ec2-user/.ssh/config
+chmod 400 /home/ec2-user/.ssh/config
 
 # Install WEKA Tools
 mkdir /home/ec2-user/tools
