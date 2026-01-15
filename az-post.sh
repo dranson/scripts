@@ -6,10 +6,10 @@ sudo apt install -y pdsh git
 
 #Setup PDSH variables
 weka user login david AZURe_*321!
-echo 'export PDSH_RCMD_TYPE=ssh' >> ~/.bashrc
-echo 'export WCOLL=~/weka_cluster.host'  >> ~/.bashrc
-weka cluster servers list --role=backend -o hostname --no-header > ~/weka_cluster.host
-weka cluster servers list --role=client -o hostname --no-header > ~/weka_clients.host
+echo 'export PDSH_RCMD_TYPE=ssh' >> /home/weka/.bashrc
+echo 'export WCOLL=~/weka_cluster.host'  >> /home/weka/.bashrc
+weka cluster servers list --role=backend -o hostname --no-header > /home/weka/weka_cluster.host
+weka cluster servers list --role=client -o hostname --no-header > /home/weka/weka_clients.host
 weka user delete david
 
 #Setup SSH 
