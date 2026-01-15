@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 #Install Packages
@@ -19,5 +18,11 @@ sudo -u weka echo "   StrictHostKeyChecking no" >> /home/weka/.ssh/config
 sudo -u weka mkdir /home/weka/tools
 sudo -u weka git clone https://github.com/weka/tools /home/weka/tools
 
-# Open up /mnt/weka
+# Setup to run FIO
 chmod 777 /mnt/weka
+mkdir /mnt/weka/fio
+sudo -u weka mkdir /home/weka/fio
+sudo -u weka curl -o /home/weka/fio -s https://raw.githubusercontent.com/dranson/scripts/main/fio-read.job
+sudo -u weka curl -o /home/weka/fio -s https://raw.githubusercontent.com/dranson/scripts/main/fio-write.job
+sudo -u weka curl -o /home/weka/fio -s https://raw.githubusercontent.com/dranson/scripts/main/fio-read-iops.job
+sudo -u weka curl -o /home/weka/fio -s https://raw.githubusercontent.com/dranson/scripts/main/fio-write-iops.job
