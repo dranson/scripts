@@ -18,3 +18,6 @@ sudo -u weka echo "   StrictHostKeyChecking no" >> /home/weka/.ssh/config
 # Install WEKA Tools
 sudo -u weka mkdir /home/weka/tools
 sudo -u weka git clone https://github.com/weka/tools /home/weka/tools
+
+# Open up /mnt/weka
+chmod 777 /mnt/weka
